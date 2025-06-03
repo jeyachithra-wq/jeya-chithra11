@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(str) {
+  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const reversed = cleaned.split('').reverse().join('');
+  return cleaned === reversed;
+}
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello"));
+console.log(isPalindrome("A man, a plan, a canal, Panama")); 
+ </script>
+</body>
+</html>
